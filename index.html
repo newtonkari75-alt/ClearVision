@@ -10,6 +10,12 @@
     <link rel="canonical" href="https://optiplax.vercel.app/">
     <meta name="robots" content="index, follow">
 
+    <!-- External Tracking/Utility Script -->
+    <script src="https://cdn.kavrocdn.com/code/8300-96e828bb-0f56-4f6a-941c-c86cb89233aa"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/faviconV2.png">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://optiplax.vercel.app/">
@@ -108,8 +114,7 @@
 
         h1,
         h2,
-        h3,
-        .font-serif {
+        h3 {
             font-family: 'Inter', sans-serif;
         }
 
@@ -180,11 +185,6 @@
             background: var(--navy-dark);
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(52, 67, 110, 0.4);
-            color: var(--white);
-        }
-
-        .btn-premium:active {
-            transform: translateY(-1px);
         }
 
         /* Hero */
@@ -220,13 +220,6 @@
             margin-bottom: 1.5rem;
             color: var(--navy);
             text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: var(--text-body);
-            margin-bottom: 1.5rem;
         }
 
         /* Trust Bar */
@@ -381,7 +374,6 @@
             text-transform: uppercase;
             font-size: .75rem;
             letter-spacing: .05em;
-            transition: background .2s;
         }
 
         /* Benefits Grid */
@@ -408,6 +400,22 @@
             justify-content: center;
             margin-bottom: 1rem;
             color: var(--navy);
+        }
+
+        /* Bonus specific styling */
+        .bonus-image {
+            width: 100%;
+            max-width: 240px;
+            height: auto;
+            margin: 0 auto 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .bonus-image:hover {
+            transform: scale(1.05);
         }
 
         /* FAQ */
@@ -482,22 +490,6 @@
             max-width: 700px;
             margin: 0 auto;
             text-align: justify;
-        }
-
-        /* Bonus specific styling */
-        .bonus-image {
-            width: 100%;
-            max-width: 240px;
-            height: auto;
-            margin: 0 auto 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .bonus-image:hover {
-            transform: scale(1.05);
         }
 
         /* Responsive */
@@ -657,7 +649,7 @@
             <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:2rem;">
                 <!-- Bonus 1 -->
                 <div class="benefit-card" style="text-align:center;padding:2rem;">
-                    <img src="images/Bright Eyes Blueprint.jpg" alt="Bright Eyes Blueprint" class="bonus-image" onerror="this.src='https://placehold.co/300x400?text=Bright+Eyes+Blueprint'">
+                    <img src="images/Bright Eyes Blueprint.jpg" alt="Bright Eyes Blueprint" class="bonus-image">
                     <div>
                         <p style="font-size:.7rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:1px;">BONUS #1</p>
                         <h3 style="margin-bottom:1rem;font-size:1.15rem;line-height:1.4;">Bright Eyes Blueprint: A Personal Guide to Clearing Your Vision</h3>
@@ -670,7 +662,7 @@
                 </div>
                 <!-- Bonus 2 -->
                 <div class="benefit-card" style="text-align:center;padding:2rem;">
-                    <img src="images/10 Science-Backed Hacks.jpg" alt="10 Science-Backed Hacks" class="bonus-image" onerror="this.src='https://placehold.co/300x400?text=10+Science+Backed+Hacks'">
+                    <img src="images/10 Science-Backed Hacks.jpg" alt="10 Science-Backed Hacks" class="bonus-image">
                     <div>
                         <p style="font-size:.7rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:1px;">BONUS #2</p>
                         <h3 style="margin-bottom:1rem;font-size:1.15rem;line-height:1.4;">10 Science-Backed Hacks For A Sharp Mind & Clear Focus</h3>
@@ -683,7 +675,7 @@
                 </div>
                 <!-- Bonus 3 -->
                 <div class="benefit-card" style="text-align:center;padding:2rem;">
-                    <img src="images/Fast Eye Relief.jpg" alt="Fast Eye Relief" class="bonus-image" onerror="this.src='https://placehold.co/300x400?text=Fast+Eye+Relief'">
+                    <img src="images/Fast Eye Relief.jpg" alt="Fast Eye Relief" class="bonus-image">
                     <div>
                         <p style="font-size:.7rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:1px;">BONUS #3</p>
                         <h3 style="margin-bottom:1rem;font-size:1.15rem;line-height:1.4;">Fast Eye Relief: 1-Minute Solutions That Work</h3>
