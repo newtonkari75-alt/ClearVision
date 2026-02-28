@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiPlax™ | Premium Vision Support Formula - Restore Clarity & Focus</title>
+    <meta name="description"
+        content="Discover OptiPlax™, the breakthrough marine-based formula supporting sharper vision, reduced eye strain, and long-term macular health. 60-Day Money-Back Guarantee.">
+    <link rel="canonical" href="https://optiplax.vercel.app/">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://optiplax.vercel.app/">
+    <meta property="og:title" content="OptiPlax™ | Premium Vision Support Formula">
+    <meta property="og:description"
+        content="Support sharper, clearer vision naturally. Marine-based blend of Kelp, Wakame, Astaxanthin & Ecklonia Cava.">
+    <meta property="og:image" content="https://optiplax.vercel.app/images/hero.webp">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://optiplax.vercel.app/">
+    <meta property="twitter:title" content="OptiPlax™ | Premium Vision Support Formula">
+    <meta property="twitter:description"
+        content="Support sharper, clearer vision naturally. Marine-based blend with a 60-Day Guarantee.">
+    <meta property="twitter:image" content="https://optiplax.vercel.app/images/hero.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "OptiPlax™",
+      "image": "https://optiplax.vercel.app/images/product.webp",
+      "description": "Natural vision support supplement using marine-based nutrients for clarity, focus, and eye health.",
+      "brand": {
+        "@type": "Brand",
+        "name": "OptiPlax"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://optiplax.vercel.app/",
+        "priceCurrency": "USD",
+        "price": "49.00",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "11369",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "OptiPlax",
+      "url": "https://optiplax.vercel.app/",
+      "logo": "https://optiplax.vercel.app/images/logo.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": ["US","CA","AU","NZ"],
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #34436E;
+            --navy-dark: #1E2D50;
+            --blue-light: #8BA4D0;
+            --blue-accent: #92AAD4;
+            --white: #FFFFFF;
+            --gray-bg: #F5F5F5;
+            --gray-border: #E0E0E0;
+            --text-dark: #1A1A1A;
+            --text-body: #555555;
+            --text-muted: #999999;
+            --green: #2EAD6B;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background: var(--white);
+            scroll-behavior: smooth;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-serif {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .75);
+            z-index: 50;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            backdrop-filter: blur(4px);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        details>summary {
+            list-style: none;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Header */
+        .site-header {
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-border);
+            padding: 1.25rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 40;
+        }
+
+        .site-header .logo-img {
+            height: 25px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .btn-premium {
+            background: var(--navy);
+            color: var(--white);
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(52, 67, 110, 0.25);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-premium:hover {
+            background: var(--navy-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(52, 67, 110, 0.4);
+            color: var(--white);
+        }
+
+        .btn-premium:active {
+            transform: translateY(-1px);
+        }
+
+        /* Hero */
+        .trust-seals {
+            display: none;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: #EBF2FF;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .hero-image-container {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image-container img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .15));
+        }
+
+        .hero-text {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--navy);
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-body);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--navy-dark);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+        }
+
+        .trust-bar .item {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            color: var(--white);
+        }
+
+        .trust-bar .item .material-icons-round {
+            font-size: 1.75rem;
+            color: var(--blue-accent);
+        }
+
+        .trust-bar .item .label {
+            font-size: .8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-style: italic;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-alt {
+            background: var(--gray-bg);
+        }
+
+        .section-navy {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: .5rem;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: .9rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Flag Cards */
+        .flag-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+        }
+
+        .flag-card {
+            background: var(--white);
+            border: 2px solid var(--gray-border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: all .3s;
+            display: block;
+            position: relative;
+        }
+
+        .flag-card:hover {
+            border-color: var(--navy);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .1);
+        }
+
+        .flag-card .badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--navy);
+            color: var(--white);
+            font-size: .6rem;
+            font-weight: 700;
+            padding: .3rem .75rem;
+            border-radius: 0 1rem 0 .75rem;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+        }
+
+        .flag-card img {
+            width: 80px;
+            height: auto;
+            margin: 0 auto 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+        }
+
+        .flag-card .stock {
+            display: inline-flex;
+            align-items: center;
+            gap: .25rem;
+            background: #E8F8EF;
+            color: var(--green);
+            font-size: .65rem;
+            font-weight: 700;
+            padding: .2rem .6rem;
+            border-radius: 50px;
+            margin-bottom: .5rem;
+        }
+
+        .flag-card .stock::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .4
+            }
+        }
+
+        .flag-card h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: .25rem;
+        }
+
+        .flag-card .ship {
+            font-size: .7rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .flag-card .cta {
+            background: var(--navy);
+            color: var(--white);
+            font-weight: 700;
+            padding: .7rem;
+            border-radius: .5rem;
+            text-transform: uppercase;
+            font-size: .75rem;
+            letter-spacing: .05em;
+            transition: background .2s;
+        }
+
+        .flag-card:hover .cta {
+            background: var(--navy-dark);
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
+        .benefit-card {
+            background: var(--white);
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+        }
+
+        .benefit-card .icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(52, 67, 110, .08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: var(--navy);
+        }
+
+        .benefit-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .benefit-card p {
+            font-size: .85rem;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        /* Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+        }
+
+        .review-card {
+            background: var(--white);
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+        }
+
+        .review-card .stars {
+            color: var(--green);
+            font-size: .9rem;
+            margin-bottom: .75rem;
+        }
+
+        .review-card .title {
+            font-weight: 700;
+            font-size: .875rem;
+            margin-bottom: .5rem;
+        }
+
+        .review-card .text {
+            font-size: .85rem;
+            color: var(--text-body);
+            line-height: 1.6;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .review-card .author {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+        }
+
+        .review-card .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--navy);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .7rem;
+            font-weight: 700;
+        }
+
+        .review-card .name {
+            font-weight: 700;
+            font-size: .8rem;
+        }
+
+        .review-card .verified {
+            font-size: .6rem;
+            color: var(--green);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: var(--gray-bg);
+            border: 1px solid var(--gray-border);
+            border-radius: .75rem;
+            margin-bottom: .75rem;
+            overflow: hidden;
+        }
+
+        .faq-item summary {
+            padding: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .95rem;
+            transition: color .2s;
+        }
+
+        .faq-item summary:hover {
+            color: var(--navy);
+        }
+
+        .faq-item .answer {
+            padding: 0 1.25rem 1.25rem;
+            font-size: .875rem;
+            color: var(--text-body);
+            line-height: 1.7;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: var(--navy);
+            text-align: center;
+            padding: 3.5rem 2rem;
+            color: var(--white);
+        }
+
+        .final-cta h2 {
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            color: rgba(255, 255, 255, .7);
+            margin-bottom: 2rem;
+        }
+
+        .final-cta .btn {
+            background: var(--white);
+            color: var(--navy);
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            transition: transform .2s;
+        }
+
+        .final-cta .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: var(--gray-bg);
+            border-top: 1px solid var(--gray-border);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links button {
+            background: none;
+            border: none;
+            font-size: .7rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            cursor: pointer;
+            transition: color .2s;
+        }
+
+        .footer-links button:hover {
+            color: var(--navy);
+        }
+
+        .disclaimer {
+            font-size: .6rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .disclaimer p {
+            margin-bottom: .75rem;
+        }
+
+        /* SSL Badge */
+        .ssl-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            background: #E8F8EF;
+            color: var(--green);
+            padding: .4rem 1rem;
+            border-radius: 50px;
+            font-size: .7rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .hero-left {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .hero-right {
+                width: 100%;
+                padding: 2rem;
+                min-height: 300px;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero-right img {
+                max-width: 240px;
+            }
+
+            .trust-bar {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .flag-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefits-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .site-header {
+                flex-direction: column;
+                gap: .75rem;
+            }
+
+            .site-header nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <img src="images/logo.webp" alt="OptiPlax Official" class="logo-img"
+            onerror="this.outerHTML='<span style=\'font-family:Inter;font-size:1.75rem;font-weight:700;color:var(--navy)\'>OptiPlax</span>'">
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="images/hero.webp" alt="OptiPlax Official"
+                onerror="this.src='https://placehold.co/800x600/FFFFFF/34436E?text=OptiPlax+Hero'">
+        </div>
+        <div class="hero-text">
+            <h1>Natural Vision Support Supplement for Sharper, Clearer Eyesight</h1>
+            <p>OptiPlax™ is a premium eye health formula containing a marine-based blend of <strong>Kelp, Wakame,
+                    Astaxanthin, and Chlorella</strong>. Designed to support the natural cleansing processes of the eye
+                and protect delicate tissues from visual decline.</p>
+            <p>Experience the breakthrough solution that thousands rely on for maintaining crystal-clear focus and
+                long-term macular health well into old age.</p>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="item">
+            <span class="material-icons-round">visibility</span>
+            <span class="label">Vision Support</span>
+        </div>
+        <div class="item">
+            <span class="material-icons-round">health_and_safety</span>
+            <span class="label">Eye Health Aid</span>
+        </div>
+        <div class="item">
+            <span class="material-icons-round">psychology</span>
+            <span class="label">Clarity & Focus</span>
+        </div>
+    </div>
+
+    <!-- FLAG SECTION -->
+    <section id="order">
+        <div class="section">
+            <h2 class="section-title">Check Local Availability</h2>
+            <p class="section-sub">Select your shipping region below</p>
+            <div class="flag-grid">
+                <a href="https://mwebora.com/11878/3815/7/?" class="flag-card"
+                    onclick="gtag('event','checkout_click',{'event_category':'Flag','country':'US'})">
+                    <div class="badge">Priority</div>
+                    <img src="https://flagcdn.com/w160/us.png" alt="Shipping to United States" width="80" height="53">
+                    <div class="stock">In Stock</div>
+                    <h3>United States</h3>
+                    <p class="ship">Ships in 2-3 Business Days</p>
+                    <div class="cta">Order Now →</div>
+                </a>
+                <a href="https://mwebora.com/11878/3815/7/?" class="flag-card"
+                    onclick="gtag('event','checkout_click',{'event_category':'Flag','country':'CA'})">
+                    <div class="badge" style="background:#C41E3A">No Duties</div>
+                    <img src="https://flagcdn.com/w160/ca.png" alt="Shipping to Canada" width="80" height="53">
+                    <div class="stock">In Stock</div>
+                    <h3>Canada</h3>
+                    <p class="ship">Ships in 2-3 Business Days</p>
+                    <div class="cta" style="background:#C41E3A">Order Now →</div>
+                </a>
+                <a href="https://mwebora.com/11878/3815/7/?" class="flag-card"
+                    onclick="gtag('event','checkout_click',{'event_category':'Flag','country':'NZ'})">
+                    <div class="badge" style="background:#1A3A6B">Available</div>
+                    <img src="https://flagcdn.com/w160/nz.png" alt="Shipping to New Zealand" width="80" height="53">
+                    <div class="stock">In Stock</div>
+                    <h3>New Zealand</h3>
+                    <p class="ship">Ships in 5-7 Business Days</p>
+                    <div class="cta" style="background:#1A3A6B">Order Now →</div>
+                </a>
+                <a href="https://mwebora.com/11878/3815/7/?" class="flag-card"
+                    onclick="gtag('event','checkout_click',{'event_category':'Flag','country':'AU'})">
+                    <div class="badge" style="background:#003580">Available</div>
+                    <img src="https://flagcdn.com/w160/au.png" alt="Shipping to Australia" width="80" height="53">
+                    <div class="stock">In Stock</div>
+                    <h3>Australia</h3>
+                    <p class="ship">Ships in 5-7 Business Days</p>
+                    <div class="cta" style="background:#003580">Order Now →</div>
+                </a>
+            </div>
+            <div style="text-align:center">
+                <div class="ssl-badge"><span class="material-icons-round" style="font-size:1rem">lock</span>Secure
+                    256-bit SSL Encrypted Checkout</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INGREDIENTS -->
+    <section id="ingredients" class="section-alt">
+        <div class="section" style="padding-top:3rem;padding-bottom:3rem;">
+            <h2 class="section-title">In Every Capsule of OptiPlax You'll Find:</h2>
+            <p class="section-sub">An optimally dosed proprietary blend of nourishing ingredients carefully combined to
+                complement each other</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon"><span class="material-icons-round">water_drop</span></div>
+                    <h3>Kelp</h3>
+                    <p>A mineral-rich marine algae that supports detoxification and provides essential nutrients for
+                        overall wellbeing.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><span class="material-icons-round">spa</span></div>
+                    <h3>Wakame</h3>
+                    <p>Japanese seaweed prized for its fucoxanthin content, supporting healthy cellular function and eye
+                        tissue nourishment.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><span class="material-icons-round">remove_red_eye</span></div>
+                    <h3>Astaxanthin</h3>
+                    <p>The world's strongest natural antioxidant — 6,000x more potent than Vitamin C — supporting
+                        retinal blood flow.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><span class="material-icons-round">eco</span></div>
+                    <h3>Chlorella</h3>
+                    <p>A nutrient-dense green algae that assists in natural detoxification and supports the body's
+                        cleansing processes.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><span class="material-icons-round">waves</span></div>
+                    <h3>Ecklonia Cava</h3>
+                    <p>A deep-sea polyphenol extract that promotes healthy circulation and protects delicate neural and
+                        ocular tissues.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon"><span class="material-icons-round">science</span></div>
+                    <h3>Synergistic Formula</h3>
+                    <p>All ingredients carefully combined to complement each other — designed to support sharper,
+                        clearer eyesight at any age.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREE BONUSES -->
+    <section id="bonuses" class="section-alt">
+        <div class="section">
+            <h2 class="section-title">Order 6 Bottles and Get <span style="color:var(--navy)">3 FREE Bonuses!</span>
+            </h2>
+            <p class="section-sub">Every 6 Bottles Order Gets FREE Shipping Too!</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:2rem;">
+                <div class="benefit-card" style="text-align:center;padding:2rem;">
+                    <div
+                        style="width:100%;height:140px;background:rgba(52,67,110,.04);border-radius:.75rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+                        <span class="material-icons-round" style="font-size:4rem;color:var(--navy)">visibility</span>
+                    </div>
+                    <div>
+                        <p
+                            style="font-size:.7rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:1px;">
+                            BONUS #1</p>
+                        <h3 style="margin-bottom:1rem;font-size:1.15rem;line-height:1.4;">Bright Eyes Blueprint: A
+                            Personal Guide to Clearing Your Vision</h3>
+                        <p style="margin-bottom:1.5rem;">Track your progress with 10 printable vision templates, a
+                            30-second daily eye workout, and the top 4 exotic fruits that support your eyesight.</p>
+                        <div style="border-top:1px solid var(--gray-border);padding-top:1rem;">
+                            <span style="color:var(--text-muted);text-decoration:line-through;font-size:.8rem;">Retail
+                                Price - $55</span>
+                            <strong style="color:var(--green);margin-left:.75rem;font-size:1rem;">Today: FREE</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-card" style="text-align:center;padding:2rem;">
+                    <div
+                        style="width:100%;height:140px;background:rgba(52,67,110,.04);border-radius:.75rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+                        <span class="material-icons-round" style="font-size:4rem;color:var(--navy)">psychology</span>
+                    </div>
+                    <div>
+                        <p
+                            style="font-size:.7rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:1px;">
+                            BONUS #2</p>
+                        <h3 style="margin-bottom:1rem;font-size:1.15rem;line-height:1.4;">10 Science-Backed Hacks For A
+                            Sharp Mind & Clear Focus</h3>
+                        <p style="margin-bottom:1.5rem;">Unlock faster recall with a memory-boosting jingle, a powerful
+                            brain rhyme, and 3 unique images that trigger instant mental connections.</p>
+                        <div style="border-top:1px solid var(--gray-border);padding-top:1rem;">
+                            <span style="color:var(--text-muted);text-decoration:line-through;font-size:.8rem;">Retail
+                                Price - $54</span>
+                            <strong style="color:var(--green);margin-left:.75rem;font-size:1rem;">Today: FREE</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-card" style="text-align:center;padding:2rem;">
+                    <div
+                        style="width:100%;height:140px;background:rgba(52,67,110,.04);border-radius:.75rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+                        <span class="material-icons-round" style="font-size:4rem;color:var(--navy)">timer</span>
+                    </div>
+                    <div>
+                        <p
+                            style="font-size:.7rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;text-transform:uppercase;letter-spacing:1px;">
+                            BONUS #3</p>
+                        <h3 style="margin-bottom:1rem;font-size:1.15rem;line-height:1.4;">Fast Eye Relief: 1-Minute
+                            Solutions That Work</h3>
+                        <p style="margin-bottom:1.5rem;">Discover the sleep position, eye yoga moves, and surprising
+                            foods that reduce puffiness, dark circles, and eye bags fast.</p>
+                        <div style="border-top:1px solid var(--gray-border);padding-top:1rem;">
+                            <span style="color:var(--text-muted);text-decoration:line-through;font-size:.8rem;">Retail
+                                Price - $55</span>
+                            <strong style="color:var(--green);margin-left:.75rem;font-size:1rem;">Today: FREE</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section>
+        <div class="section">
+            <h2 class="section-title">Our Customers Say</h2>
+            <p class="section-sub" style="display:flex;align-items:center;justify-content:center;gap:.5rem;"><span
+                    style="color:var(--green);">★★★★★</span> based on 11,369 reviews!</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="title">"I can read the morning paper again"</p>
+                    <p class="text">"I'm 68 and my optometrist told me there wasn't much I could do. After 3 months of
+                        OptiPlax, everything looks sharper."</p>
+                    <div class="author">
+                        <div class="avatar">MR</div>
+                        <div>
+                            <p class="name">Margaret R.</p>
+                            <p class="verified">✓ Verified Buyer – Florida, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="title">"Night driving is no longer terrifying"</p>
+                    <p class="text">"The oncoming headlights used to blind me completely. After two months on OptiPlax,
+                        I feel confident driving at night again."</p>
+                    <div class="author">
+                        <div class="avatar">JT</div>
+                        <div>
+                            <p class="name">James T.</p>
+                            <p class="verified">✓ Verified Buyer – Ontario, Canada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="title">"My eye doctor noticed the difference"</p>
+                    <p class="text">"I was skeptical. But after 60 days, my optometrist said the results were better
+                        than expected. She asked what I'd changed."</p>
+                    <div class="author">
+                        <div class="avatar">SL</div>
+                        <div>
+                            <p class="name">Susan L.</p>
+                            <p class="verified">✓ Verified Buyer – Auckland, NZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="title">"Easy to take, no aftertaste"</p>
+                    <p class="text">"At 74 I appreciate simplicity. Two capsules with breakfast. No fishy taste, no
+                        stomach issues. My reading glasses get less use now."</p>
+                    <div class="author">
+                        <div class="avatar">RP</div>
+                        <div>
+                            <p class="name">Robert P.</p>
+                            <p class="verified">✓ Verified Buyer – Melbourne, AU</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="title">"Bought 6 bottles for me and my wife"</p>
+                    <p class="text">"We're both in our early 60s and screen fatigue was getting to us. Two months in and
+                        we both feel the difference."</p>
+                    <div class="author">
+                        <div class="avatar">DP</div>
+                        <div>
+                            <p class="name">David P.</p>
+                            <p class="verified">✓ Verified Buyer – Texas, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="title">"Fast shipping to New Zealand"</p>
+                    <p class="text">"Arrived in 6 days, no surprise customs charges. Already on my second bottle and
+                        feeling great."</p>
+                    <div class="author">
+                        <div class="avatar">KW</div>
+                        <div>
+                            <p class="name">Karen W.</p>
+                            <p class="verified">✓ Verified Buyer – Wellington, NZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:2.5rem;">
+                <a href="#order" class="btn-premium">
+                    <span>Try OptiPlax Risk-Free</span>
+                    <span class="material-icons-round">arrow_forward</span>
+                </a>
+                <p style="margin-top:1rem;font-size:.75rem;color:var(--text-muted);font-weight:600;">60-Day Money Back
+                    Guarantee • No Questions Asked</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-alt">
+        <div class="section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-sub">Everything you need to know about OptiPlax™</p>
+            <div style="max-width:750px;margin:0 auto;">
+                <details class="faq-item">
+                    <summary>How does OptiPlax work?<span class="material-icons-round"
+                            style="color:var(--text-muted)">expand_more</span></summary>
+                    <div class="answer">OptiPlax contains a proprietary blend of five marine-based nutrients —
+                        <strong>Kelp, Wakame, Astaxanthin, Chlorella, and Ecklonia Cava</strong> — carefully combined to
+                        complement each other. These nutrients support the natural cleansing processes of the eye,
+                        helping to nourish and protect the delicate tissues responsible for clear, sharp vision. Over
+                        time, "plaque" can accumulate in these tissues, leading to blurriness and visual decline.
+                        OptiPlax is designed to support the body's ability to manage this process naturally.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is your money-back guarantee?<span class="material-icons-round"
+                            style="color:var(--text-muted)">expand_more</span></summary>
+                    <div class="answer">Your order is covered by our iron-clad <strong>60-day, 100% money-back
+                            guarantee</strong>. If you are not impressed with the results, simply write to us and we'll
+                        refund every single cent. No questions asked.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>How many bottles should I order?<span class="material-icons-round"
+                            style="color:var(--text-muted)">expand_more</span></summary>
+                    <div class="answer">96% of our customers choose the 6-bottle option, which is our recommended
+                        package. Long-term, consistent supplementation yields the best results. The 6-bottle package
+                        provides a 180-day supply, <strong>FREE shipping</strong>, and <strong>3 exclusive bonus
+                            guides</strong>.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I use OptiPlax?<span class="material-icons-round"
+                            style="color:var(--text-muted)">expand_more</span></summary>
+                    <div class="answer">Take <strong>2 capsules daily</strong> with a meal and a full glass of water.
+                        For best results, take consistently at the same time each day.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>Is this a one-off purchase?<span class="material-icons-round"
+                            style="color:var(--text-muted)">expand_more</span></summary>
+                    <div class="answer"><strong>Yes.</strong> One-time purchase with no hidden auto-ship programs,
+                        subscriptions, or recurring charges. You pay once and your order is shipped.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>What are the ingredients in OptiPlax?<span class="material-icons-round"
+                            style="color:var(--text-muted)">expand_more</span></summary>
+                    <div class="answer">OptiPlax contains: <strong>Kelp</strong> (mineral-rich marine algae),
+                        <strong>Wakame</strong> (Japanese seaweed), <strong>Astaxanthin</strong> (powerful natural
+                        antioxidant), <strong>Chlorella</strong> (green algae superfood), and <strong>Ecklonia
+                            Cava</strong> (deep-sea polyphenol). All natural, non-GMO, no stimulants.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is your shipping policy?<span class="material-icons-round"
+                            style="color:var(--text-muted)">expand_more</span></summary>
+                    <div class="answer">6-bottle orders include <strong>FREE shipping</strong>. USA: 2-3 business days.
+                        Canada: 2-3 business days. Australia & New Zealand: 5-7 business days. International orders
+                        outside these regions may have additional fees.</div>
+                </details>
+            </div>
+            <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does OptiPlax work?","acceptedAnswer":{"@type":"Answer","text":"OptiPlax contains a proprietary blend of five marine-based nutrients that support the natural cleansing processes of the eye."}},{"@type":"Question","name":"What is your money-back guarantee?","acceptedAnswer":{"@type":"Answer","text":"60-day, 100% money-back guarantee. Contact us for a full refund if not satisfied."}},{"@type":"Question","name":"How many bottles should I order?","acceptedAnswer":{"@type":"Answer","text":"96% of customers choose 6 bottles. It provides 180 days, free shipping, and 3 free bonuses."}},{"@type":"Question","name":"How do I use OptiPlax?","acceptedAnswer":{"@type":"Answer","text":"Take 2 capsules daily with a meal and a glass of water."}},{"@type":"Question","name":"Is this a one-off purchase?","acceptedAnswer":{"@type":"Answer","text":"Yes. One-time purchase, no subscriptions."}},{"@type":"Question","name":"What are the ingredients?","acceptedAnswer":{"@type":"Answer","text":"Kelp, Wakame, Astaxanthin, Chlorella, Ecklonia Cava. All natural, non-GMO."}},{"@type":"Question","name":"What is your shipping policy?","acceptedAnswer":{"@type":"Answer","text":"Free shipping on 6-bottle orders. USA/Canada 2-3 days, AU/NZ 5-7 days."}}]}
+        </script>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <div class="final-cta">
+        <h2 style="font-size:2rem;">Your Vision Deserves Better</h2>
+        <p>Join 11,369+ people who chose to support their eyesight naturally.</p>
+        <a href="#order" class="btn">Check Availability Now <span class="material-icons-round">chevron_right</span></a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div style="font-family:'Inter',sans-serif;font-size:1.5rem;font-weight:700;color:#ccc;margin-bottom:1.5rem;">
+            OptiPlax
+        </div>
+        <div class="footer-links">
+            <button onclick="openModal('contact')">Contact</button>
+            <button onclick="openModal('terms')">Terms of Use</button>
+            <button onclick="openModal('disclaimer')">Disclaimer</button>
+            <button onclick="openModal('privacy')">Privacy Policy</button>
+            <button onclick="openModal('shipping')">Shipping Policy</button>
+            <button onclick="openModal('refund')">Refund Policy</button>
+        </div>
+        <div class="disclaimer">
+            <p><strong>ADVERTISING DISCLOSURE:</strong> This website is an advertisement and not a news publication. The
+                product is real and testimonials are based on actual customers. Results are illustrative and may not
+                reflect the typical purchaser's experience.</p>
+            <p><strong>MEDICAL DISCLAIMER:</strong> Information provided is not intended to replace consultation with a
+                qualified medical professional. Statements have not been evaluated by the Food and Drug Administration.
+                Products are not intended to diagnose, treat, cure or prevent any disease. If pregnant, nursing, taking
+                medication, or have a medical condition, consult your physician before use.</p>
+            <p><strong>AUTHORIZED INDEPENDENT DISTRIBUTOR:</strong> We are not the manufacturer. All trademarks are
+                property of their respective owners. This site is NOT endorsed by Facebook or Google.</p>
+            <p><strong>RETAILER:</strong> BuyGoods is the retailer. BuyGoods, a Delaware corporation, 1201 N Orange
+                Street Suite #7223, Wilmington, DE, 19801, USA. BuyGoods role as retailer does not constitute
+                endorsement of this product.</p>
+            <p>*For international shipping outside the United States, shipping fees will apply.</p>
+        </div>
+        <p style="font-size:.6rem;color:#ccc;margin-top:1.5rem;">© 2025 OptiPlax | All Rights Reserved</p>
+    </footer>
+
+    <!-- HIDDEN MODAL CONTENT -->
+    <div id="modal-terms" class="hidden">
+        <h2
+            style="font-size:1.25rem;font-weight:700;border-bottom:1px solid #eee;padding-bottom:.75rem;margin-bottom:1rem;">
+            Terms of Use</h2>
+        <div style="font-size:.85rem;color:#555;max-height:400px;overflow-y:auto;line-height:1.7;">
+            <p style="margin-bottom:.75rem;"><strong>1. AGREEMENT TO TERMS</strong><br>By accessing this website and
+                purchasing OptiPlax™, you agree to these Terms. If you disagree, you may not access the service.</p>
+            <p style="margin-bottom:.75rem;"><strong>2. INTELLECTUAL PROPERTY</strong><br>All content is protected under
+                applicable copyrights and trademarks. Copying or redistribution is strictly prohibited.</p>
+            <p style="margin-bottom:.75rem;"><strong>3. PURCHASES</strong><br>You warrant that payment information is
+                accurate and you have authority to make purchases.</p>
+            <p style="margin-bottom:.75rem;"><strong>4. LIMITATION OF LIABILITY</strong><br>In no event shall OptiPlax
+                or BuyGoods be liable for indirect, incidental, or consequential damages.</p>
+            <p><strong>5. GOVERNING LAW</strong><br>Governed by laws of the State of Delaware, United States.</p>
+        </div>
+    </div>
+
+    <div id="modal-privacy" class="hidden">
+        <h2
+            style="font-size:1.25rem;font-weight:700;border-bottom:1px solid #eee;padding-bottom:.75rem;margin-bottom:1rem;">
+            Privacy Policy</h2>
+        <div style="font-size:.85rem;color:#555;max-height:400px;overflow-y:auto;line-height:1.7;">
+            <p style="margin-bottom:.75rem;"><strong>1. INFORMATION COLLECTION</strong><br>We collect name, email,
+                address, phone, and payment info when you make a purchase.</p>
+            <p style="margin-bottom:.75rem;"><strong>2. USE</strong><br>To process transactions, send confirmations, and
+                respond to requests.</p>
+            <p style="margin-bottom:.75rem;"><strong>3. SHARING</strong><br>We do not sell personal information. We
+                share only with service providers for order fulfillment.</p>
+            <p><strong>4. SECURITY</strong><br>All payment info encrypted with SSL technology.</p>
+        </div>
+    </div>
+
+    <div id="modal-disclaimer" class="hidden">
+        <h2
+            style="font-size:1.25rem;font-weight:700;border-bottom:1px solid #eee;padding-bottom:.75rem;margin-bottom:1rem;">
+            Disclaimer</h2>
+        <div style="font-size:.85rem;color:#555;max-height:400px;overflow-y:auto;line-height:1.7;">
+            <p style="margin-bottom:.75rem;">Content is provided "AS IS" and "AS AVAILABLE." Do your own research and
+                consult a healthcare provider.</p>
+            <p style="margin-bottom:.75rem;">Neither BuyGoods nor the author provide medical advice. Statements not
+                evaluated by the FDA. Products are not intended to diagnose, treat, cure or prevent any disease.</p>
+            <p>BuyGoods's sale does not constitute endorsement of views expressed herein.</p>
+        </div>
+    </div>
+
+    <div id="modal-shipping" class="hidden">
+        <h2
+            style="font-size:1.25rem;font-weight:700;border-bottom:1px solid #eee;padding-bottom:.75rem;margin-bottom:1rem;">
+            Shipping Policy</h2>
+        <div style="font-size:.85rem;color:#555;line-height:1.7;">
+            <p style="margin-bottom:.75rem;"><strong>PROCESSING:</strong> Within 24 hours.</p>
+            <p style="margin-bottom:.75rem;"><strong>DELIVERY:</strong> USA 2-3 days, Canada 2-3 days, AU 5-7 days, NZ
+                5-7 days.</p>
+            <p><strong>FREE SHIPPING</strong> on 6-bottle orders. $9.99 for other packages.</p>
+        </div>
+    </div>
+
+    <div id="modal-refund" class="hidden">
+        <h2
+            style="font-size:1.25rem;font-weight:700;border-bottom:1px solid #eee;padding-bottom:.75rem;margin-bottom:1rem;">
+            Refund Policy</h2>
+        <div style="font-size:.85rem;color:#555;line-height:1.7;">
+            <p style="margin-bottom:.75rem;"><strong>60-Day Money-Back Guarantee.</strong> Contact support with your
+                order number for a full refund.</p>
+            <p><strong>For Product Support:</strong> Contact the vendor. <strong>For Order Support:</strong> Contact
+                BuyGoods.</p>
+        </div>
+    </div>
+
+    <div id="modal-contact" class="hidden">
+        <h2
+            style="font-size:1.25rem;font-weight:700;border-bottom:1px solid #eee;padding-bottom:.75rem;margin-bottom:1rem;">
+            Contact Support</h2>
+        <div style="font-size:.85rem;color:#555;line-height:1.7;">
+            <p style="margin-bottom:.75rem;"><strong>For Product Support:</strong> Contact the vendor directly.</p>
+            <p><strong>For Order Support:</strong> Contact BuyGoods customer service.</p>
+        </div>
+    </div>
+
+    <!-- GENERIC MODAL -->
+    <div id="generic-modal" class="modal"
+        onclick="if(event.target===this){this.style.display='none';document.body.style.overflow='auto';}">
+        <div
+            style="background:#fff;border-radius:1rem;max-width:640px;width:100%;padding:2rem;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3);margin:1rem;max-height:90vh;overflow-y:auto;">
+            <button
+                onclick="document.getElementById('generic-modal').style.display='none';document.body.style.overflow='auto';"
+                style="position:absolute;top:1rem;right:1rem;background:#f3f3f3;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;"><span
+                    class="material-icons-round" style="font-size:1.25rem;color:#999;">close</span></button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(t) { document.getElementById('modal-body').innerHTML = document.getElementById('modal-' + t).innerHTML; document.getElementById('generic-modal').style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+    </script>
+
+</body>
+
+</html>
