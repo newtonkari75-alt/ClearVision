@@ -33,48 +33,12 @@
         content="Natural nutrition for your eyes. Marine-based blend with a 60-Day Guarantee.">
     <meta property="twitter:image" content="https://clearvisionformula.vercel.app/images/hero.webp">
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "OptiPlax™",
-      "image": "https://clearvisionformula.vercel.app/images/product.webp",
-      "description": "Natural vision support supplement using marine-based nutrients for ocular nutrition and health.",
-      "brand": {
-        "@type": "Brand",
-        "name": "OptiPlax"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://clearvisionformula.vercel.app/",
-        "priceCurrency": "USD",
-        "price": "49.00",
-        "priceValidUntil": "2025-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "11369",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
-    }
-    </script>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <style>
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
             --navy: #34436E;
@@ -90,15 +54,10 @@
             --green: #2EAD6B;
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--text-dark);
-            background: var(--white);
-            scroll-behavior: smooth;
-        }
-
+        body { font-family: 'Inter', sans-serif; color: var(--text-dark); background: var(--white); scroll-behavior: smooth; }
         h1, h2, h3 { font-family: 'Inter', sans-serif; }
 
+        /* Header */
         .site-header {
             background: var(--white);
             border-bottom: 1px solid var(--gray-border);
@@ -110,96 +69,34 @@
             top: 0;
             z-index: 40;
         }
-
         .site-header .logo-img { height: 25px; width: auto; object-fit: contain; }
 
-        .btn-premium {
-            background: var(--navy);
-            color: var(--white);
-            padding: 1rem 3rem;
-            border-radius: 50px;
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 1.1rem;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 4px 15px rgba(52, 67, 110, 0.25);
-            border: none;
-            cursor: pointer;
-        }
+        /* Hero */
+        .hero { display: flex; flex-direction: column; align-items: center; text-align: center; background: #EBF2FF; padding: 3rem 1.5rem; }
+        .hero-image-container { width: 100%; max-width: 500px; margin: 2rem 0; }
+        .hero-image-container img { width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .15)); }
+        .hero h1 { font-size: 2.25rem; line-height: 1.2; font-weight: 800; color: var(--navy); text-transform: uppercase; }
+        .hero p { font-size: 1.1rem; line-height: 1.6; color: var(--text-body); margin-bottom: 1.5rem; max-width: 800px; }
 
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            background: #EBF2FF;
-            padding: 3rem 1.5rem;
-        }
-
-        .hero-image-container {
-            width: 100%;
-            max-width: 500px;
-            margin: 2rem 0;
-        }
-
-        .hero-image-container img {
-            width: 100%;
-            height: auto;
-            filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .15));
-        }
-
-        .hero-text { max-width: 800px; }
-
-        .hero h1 {
-            font-size: 2.25rem;
-            line-height: 1.2;
-            font-weight: 800;
-            color: var(--navy);
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: var(--text-body);
-            margin-bottom: 1.5rem;
-        }
-
+        /* Trust Bar */
         .trust-bar {
             background: var(--navy-dark);
-            padding: 1.5rem 2rem;
+            padding: 1.25rem 2rem;
             display: flex;
             justify-content: center;
             gap: 4rem;
         }
+        .trust-bar .item { display: flex; align-items: center; gap: .75rem; color: var(--white); }
+        .trust-bar .item .material-icons-round { font-size: 1.5rem; color: var(--blue-accent); }
+        .trust-bar .item .label { font-size: .75rem; font-weight: 700; text-transform: uppercase; font-style: italic; letter-spacing: 0.05em; }
 
-        .trust-bar .item {
-            display: flex;
-            align-items: center;
-            gap: .75rem;
-            color: var(--white);
-        }
-
-        .trust-bar .item .material-icons-round { font-size: 1.75rem; color: var(--blue-accent); }
-        .trust-bar .item .label { font-size: .8rem; font-weight: 700; text-transform: uppercase; font-style: italic; }
-
+        /* Flag Grid */
         .section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
         .section-alt { background: var(--gray-bg); }
         .section-title { font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: .5rem; color: var(--navy); }
         .section-sub { text-align: center; color: var(--text-muted); font-size: .95rem; margin-bottom: 2.5rem; }
 
-        .flag-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.25rem;
-        }
-
+        .flag-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
         .flag-card {
             background: var(--white);
             border: 2px solid var(--gray-border);
@@ -210,38 +107,26 @@
             color: var(--text-dark);
             transition: all .3s;
             display: block;
-            position: relative;
         }
-
         .flag-card:hover { border-color: var(--navy); transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0, 0, 0, .1); }
-
-        .flag-card img { width: 60px; height: auto; margin-bottom: 1rem; border-radius: 4px; box-shadow: 0 2px 6px rgba(0, 0, 0, .1); }
+        .flag-card img { width: 60px; height: auto; margin-bottom: 1rem; border-radius: 4px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
         .flag-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .25rem; }
         .flag-card .ship { font-size: .7rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; margin-bottom: 1rem; }
         .flag-card .cta { background: var(--navy); color: var(--white); font-weight: 700; padding: .6rem; border-radius: .5rem; font-size: .75rem; text-transform: uppercase; }
 
-        .benefits-grid, .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        /* Benefits & Bonuses */
+        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .benefit-card { background: var(--white); border: 1px solid var(--gray-border); border-radius: 1rem; padding: 1.5rem; }
-        .benefit-card .icon { color: var(--navy); margin-bottom: 1rem; }
-        .benefit-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+        .bonus-image { width: 100%; max-width: 220px; height: auto; margin: 0 auto 1.5rem; border-radius: 0.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: block; }
 
-        .bonus-image {
-            width: 100%;
-            max-width: 220px;
-            height: auto;
-            margin: 0 auto 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            display: block;
-        }
-
+        /* FAQ */
         .faq-item { background: var(--white); border: 1px solid var(--gray-border); border-radius: .75rem; margin-bottom: .75rem; overflow: hidden; }
         .faq-item summary { padding: 1.25rem; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; }
-        .faq-item .answer { padding: 0 1.25rem 1.25rem; font-size: .9rem; color: var(--text-body); line-height: 1.6; border-top: 1px solid transparent; }
+        .faq-item .answer { padding: 0 1.25rem 1.25rem; font-size: .9rem; color: var(--text-body); line-height: 1.6; }
 
+        /* Footer & Modals */
         .final-cta { background: var(--navy); text-align: center; padding: 4rem 2rem; color: var(--white); }
         .final-cta .btn { background: var(--white); color: var(--navy); padding: 1rem 3rem; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: .5rem; }
-
         .site-footer { background: var(--gray-bg); padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--gray-border); }
         .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
         .footer-links button { background: none; border: none; font-size: .75rem; font-weight: 700; color: var(--text-muted); cursor: pointer; text-transform: uppercase; }
@@ -250,27 +135,44 @@
         .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.8); z-index: 100; align-items: center; justify-content: center; padding: 1rem; }
         .modal-content { background: #fff; padding: 2rem; border-radius: 1rem; max-width: 600px; width: 100%; position: relative; max-height: 90vh; overflow-y: auto; }
 
+        /* MOBILE ADJUSTMENTS */
         @media (max-width: 768px) {
+            /* Hero Order */
+            .hero { display: flex; flex-direction: column; }
             .hero h1 { font-size: 1.75rem; order: 1; }
             .hero-image-container { order: 2; margin: 1.5rem 0; }
             .hero-text { order: 3; }
-            .hero { display: flex; flex-direction: column; }
 
+            /* Trust Bar - Single line, smaller */
+            .trust-bar { 
+                gap: 0.5rem; 
+                padding: 0.75rem 0.5rem; 
+                justify-content: space-around;
+            }
+            .trust-bar .item { gap: 0.25rem; }
+            .trust-bar .item .material-icons-round { font-size: 1rem; }
+            .trust-bar .item .label { font-size: 0.6rem; letter-spacing: 0; }
+
+            /* Country Grid - 2 columns */
             .flag-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
-            .flag-card { padding: 1rem; }
-            .flag-card img { width: 45px; }
-            .flag-card h3 { font-size: 0.85rem; }
+            .flag-card { padding: 1rem 0.5rem; }
+            .flag-card img { width: 40px; margin-bottom: 0.5rem; }
+            .flag-card h3 { font-size: 0.8rem; }
+            .flag-card .ship { font-size: 0.6rem; margin-bottom: 0.75rem; }
+            .flag-card .cta { font-size: 0.65rem; padding: 0.5rem; }
 
-            .benefits-grid, .reviews-grid { grid-template-columns: 1fr; }
-            .trust-bar { flex-direction: column; gap: 1rem; align-items: center; }
-
-            /* Bônus Mobile mais discreto */
-            #bonuses .benefit-card { display: flex; align-items: center; text-align: left; padding: 1rem; gap: 1rem; }
-            #bonuses .bonus-image { max-width: 80px; margin: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-            #bonuses h3 { font-size: 0.95rem; margin-bottom: 0.25rem; }
-            #bonuses p { font-size: 0.75rem; margin-bottom: 0.5rem; }
+            /* Bonus - Discreet layout */
+            #bonuses .benefits-grid { grid-template-columns: 1fr; gap: 0.75rem; }
+            #bonuses .benefit-card { display: flex; align-items: center; text-align: left; padding: 0.75rem; gap: 1rem; border-radius: 0.75rem; }
+            #bonuses .bonus-image { max-width: 65px; margin: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+            #bonuses h3 { font-size: 0.85rem; margin-bottom: 0.15rem; }
+            #bonuses p { font-size: 0.7rem; margin-bottom: 0.25rem; line-height: 1.3; }
+            #bonuses strong { font-size: 0.7rem; color: var(--green); }
             #bonuses .benefit-card > div { flex: 1; }
             #bonuses .section-title { font-size: 1.5rem; }
+            #bonuses .section-sub { margin-bottom: 1.5rem; }
+
+            .section { padding: 2.5rem 1rem; }
         }
     </style>
 </head>
@@ -281,6 +183,7 @@
         <img src="images/logo.webp" alt="OptiPlax Official" class="logo-img" onerror="this.outerHTML='<span style=\'font-family:Inter;font-size:1.5rem;font-weight:800;color:var(--navy)\'>OptiPlax</span>'">
     </header>
 
+    <!-- HERO SECTION -->
     <section class="hero">
         <h1>Marine-Based Nutrition for Long-Term Eye Health Support</h1>
         <div class="hero-image-container">
@@ -292,12 +195,23 @@
         </div>
     </section>
 
+    <!-- TRUST BAR (Adjusted for mobile to stay on one line) -->
     <div class="trust-bar">
-        <div class="item"><span class="material-icons-round">visibility</span><span class="label">Ocular Nutrition</span></div>
-        <div class="item"><span class="material-icons-round">health_and_safety</span><span class="label">Natural Complex</span></div>
-        <div class="item"><span class="material-icons-round">psychology</span><span class="label">Daily Wellness</span></div>
+        <div class="item">
+            <span class="material-icons-round">visibility</span>
+            <span class="label">Vision Support</span>
+        </div>
+        <div class="item">
+            <span class="material-icons-round">health_and_safety</span>
+            <span class="label">Eye Health Aid</span>
+        </div>
+        <div class="item">
+            <span class="material-icons-round">psychology</span>
+            <span class="label">Clarity & Focus</span>
+        </div>
     </div>
 
+    <!-- ORDER SECTION -->
     <section id="order">
         <div class="section">
             <h2 class="section-title">Global Shipping Availability</h2>
@@ -340,9 +254,15 @@
                     <div class="cta">View Offers</div>
                 </a>
             </div>
+            <div style="text-align:center; margin-top: 1.5rem;">
+                <div class="ssl-badge" style="background:#E8F8EF; color:var(--green); padding:.4rem 1rem; border-radius:50px; font-size:.7rem; font-weight:700; display:inline-flex; align-items:center; gap:.4rem;">
+                    <span class="material-icons-round" style="font-size:1rem">lock</span>Secure 256-bit SSL Encrypted Checkout
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- BONUSES SECTION (PNG images) -->
     <section id="bonuses" class="section-alt">
         <div class="section">
             <h2 class="section-title">Support Your Journey with <span style="color:var(--navy)">Complementary Guides</span></h2>
@@ -376,37 +296,38 @@
         </div>
     </section>
 
+    <!-- RESTORED FULL FAQ -->
     <section id="faq">
         <div class="section">
             <h2 class="section-title">Frequently Asked Questions</h2>
-            <div style="max-width:800px; margin: 0 auto;">
+            <div style="max-width:850px; margin: 0 auto;">
                 <details class="faq-item">
                     <summary>How does OptiPlax work? <span class="material-icons-round">expand_more</span></summary>
-                    <div class="answer">OptiPlax contains a proprietary blend of five marine-based nutrients — <strong>Kelp, Wakame, Astaxanthin, Chlorella, and Ecklonia Cava</strong> — carefully combined to complement each other. These nutrients support the eye's natural processes, helping to nourish and protect the delicate tissues. Over time, environmental factors can impact vision; OptiPlax is designed to support the body's ability to manage this process nutritionally.</div>
+                    <div class="answer">OptiPlax contains a proprietary blend of five marine-based nutrients — <strong>Kelp, Wakame, Astaxanthin, Chlorella, and Ecklonia Cava</strong> — carefully combined to complement each other. These nutrients support the eye's natural processes, helping to nourish and protect the delicate tissues. Over time, environmental factors and oxidative stress can impact vision; OptiPlax is designed to support the body's ability to manage this process nutritionally.</div>
                 </details>
                 <details class="faq-item">
                     <summary>What is your money-back guarantee? <span class="material-icons-round">expand_more</span></summary>
-                    <div class="answer">Your order is covered by our iron-clad <strong>60-day, 100% money-back guarantee</strong>. If you are not impressed with the results or the quality of the product, simply write to us and we'll refund every single cent. Our priority is your satisfaction.</div>
+                    <div class="answer">Your order is covered by our iron-clad <strong>60-day, 100% money-back guarantee</strong>. If you are not impressed with the results, the quality of the product, or the experience, simply write to us and we'll refund every single cent. No questions asked. Our priority is your satisfaction and peace of mind.</div>
                 </details>
                 <details class="faq-item">
                     <summary>How many bottles should I order? <span class="material-icons-round">expand_more</span></summary>
-                    <div class="answer">Most of our customers choose the 6-bottle option, which is our recommended package. Consistent nutritional supplementation yields the best long-term results. The 6-bottle package provides a 180-day supply, <strong>FREE shipping</strong>, and <strong>3 exclusive bonus guides</strong>.</div>
+                    <div class="answer">96% of our customers choose the 6-bottle option, which is our recommended package. Consistent nutritional supplementation yields the best long-term results. The 6-bottle package provides a 180-day supply, <strong>FREE shipping</strong>, and <strong>3 exclusive bonus guides</strong>. It ensures you have an uninterrupted supply while you support your ocular health.</div>
                 </details>
                 <details class="faq-item">
                     <summary>How do I use OptiPlax? <span class="material-icons-round">expand_more</span></summary>
-                    <div class="answer">For optimal results, take <strong>2 capsules daily</strong> with a meal and a full glass of water. Consistently taking the supplement at the same time each day helps maintain steady nutrient levels in your system.</div>
+                    <div class="answer">For optimal results, take <strong>2 capsules daily</strong> with a meal and a full glass of water. Consistently taking the supplement at the same time each day helps maintain steady nutrient levels in your system. This routine allows the marine-based antioxidants to work synergistically within your body.</div>
                 </details>
                 <details class="faq-item">
                     <summary>Is this a one-off purchase? <span class="material-icons-round">expand_more</span></summary>
-                    <div class="answer"><strong>Yes.</strong> Every order is a one-time purchase. There are no hidden auto-ship programs, subscriptions, or recurring charges. You pay once for what you order today, and that is all.</div>
+                    <div class="answer"><strong>Yes.</strong> Every order is a one-time purchase. There are no hidden auto-ship programs, monthly subscriptions, or recurring charges. You pay once for what you order today, and that is all. We do not store your credit card information for future charges.</div>
                 </details>
                 <details class="faq-item">
                     <summary>What are the ingredients in OptiPlax? <span class="material-icons-round">expand_more</span></summary>
-                    <div class="answer">OptiPlax contains: <strong>Kelp</strong> (mineral-rich algae), <strong>Wakame</strong> (Japanese seaweed), <strong>Astaxanthin</strong> (powerful antioxidant), <strong>Chlorella</strong> (green superfood), and <strong>Ecklonia Cava</strong> (deep-sea polyphenol). All ingredients are natural, non-GMO, and free from stimulants.</div>
+                    <div class="answer">OptiPlax contains a carefully curated marine complex: <strong>Kelp</strong> (mineral-rich algae), <strong>Wakame</strong> (Japanese seaweed), <strong>Astaxanthin</strong> (powerful antioxidant), <strong>Chlorella</strong> (green superfood), and <strong>Ecklonia Cava</strong> (deep-sea polyphenol). All ingredients are natural, non-GMO, and free from stimulants or synthetic fillers.</div>
                 </details>
                 <details class="faq-item">
                     <summary>What is your shipping policy? <span class="material-icons-round">expand_more</span></summary>
-                    <div class="answer">Orders of 6 bottles include <strong>FREE shipping</strong>. USA/Canada delivery takes 2-3 business days. UK/Ireland 3-5 business days. Australia/New Zealand 5-7 business days. All orders are processed within 24 hours.</div>
+                    <div class="answer">Orders of 6 bottles include <strong>FREE shipping</strong>. USA and Canada delivery typically takes 2-3 business days. UK and Ireland take 3-5 business days, while Australia and New Zealand take 5-7 business days. All orders are processed within 24 hours and come with a tracking number sent directly to your email.</div>
                 </details>
             </div>
         </div>
@@ -426,8 +347,8 @@
             <button onclick="openModal('shipping')">Shipping</button>
         </div>
         <div class="disclaimer">
-            <p><strong>ADVERTISING DISCLOSURE:</strong> This website is an advertisement and not a news publication. Individual results will vary and may not be typical.</p>
-            <p><strong>MEDICAL DISCLAIMER:</strong> These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+            <p><strong>ADVERTISING DISCLOSURE:</strong> This website is an advertisement and not a news publication. Individual results will vary and may not be typical. The product is a dietary supplement designed for nutritional support.</p>
+            <p><strong>MEDICAL DISCLAIMER:</strong> These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Always consult with a healthcare professional before starting any new dietary supplement.</p>
             <p><strong>RETAILER DISCLOSURE:</strong> BuyGoods is the retailer. BuyGoods Inc., a Delaware corporation located at 1201 N Orange Street Suite #7223, Wilmington, DE, 19801, USA.</p>
         </div>
         <p style="font-size:.7rem; color:#999; margin-top: 1.5rem;">© 2025-2026 OptiPlax | All Rights Reserved</p>
@@ -443,10 +364,10 @@
     <script>
         function openModal(t) {
             const content = {
-                shipping: "<h3>Shipping Policy</h3><p>USA/CA: 2-3 days. UK/IE: 3-5 days. AU/NZ: 5-7 days. Tracking provided via email.</p>",
-                contact: "<h3>Contact Support</h3><p>Please reach out via our retailer's secure portal for order or product inquiries.</p>",
-                terms: "<h3>Terms of Service</h3><p>By using this site, you agree to our terms regarding dietary supplement usage.</p>",
-                privacy: "<h3>Privacy Policy</h3><p>We handle your data according to global security standards. No data is sold to third parties.</p>"
+                shipping: "<h3>Shipping Policy</h3><p>USA/CA: 2-3 days. UK/IE: 3-5 days. AU/NZ: 5-7 days. Tracking provided via email for all orders.</p>",
+                contact: "<h3>Contact Support</h3><p>Please reach out via our retailer's secure portal for order or product inquiries. We aim to respond within 24 hours.</p>",
+                terms: "<h3>Terms of Service</h3><p>By using this site, you agree to our terms regarding dietary supplement usage and privacy standards.</p>",
+                privacy: "<h3>Privacy Policy</h3><p>We handle your data according to global security standards (GDPR/CCPA). No data is sold to third parties.</p>"
             };
             document.getElementById('modal-body').innerHTML = content[t];
             document.getElementById('generic-modal').style.display = 'flex';
